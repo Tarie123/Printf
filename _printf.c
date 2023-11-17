@@ -26,8 +26,11 @@ int _printf(const char *format, ...)
 				case '%':
 					counter += _putchar('%');
 					break;
+				case 'd':
+				case 'i':
+					counter += print_integer(va_arg(rags, int));
+					break;
 				default:
-
 					counter += _putchar(*format);
 					break;
 			}
