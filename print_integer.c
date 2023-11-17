@@ -14,18 +14,17 @@ int print_integer(int n)
 		n = -n;
 	}
 	temp = n;
-	do
-	{
+	do{
 		temp /= 10;
-		digit_count++; 
-	}while (temp != 0);
+		digit_count++;
+	} while (temp != 0);
 	temp = n;
 	while (digit_count > 0)
 	{
 		divisor = 1;
-		for (i = 1; i< digit_count; i++)
+		for (i = 1; i < digit_count; i++)
 			divisor *= 10;
-		digit = temp/ divisor;
+		digit = temp / divisor;
 		counter += _putchar(digit + '0');
 		temp %= divisor;
 		digit_count--;

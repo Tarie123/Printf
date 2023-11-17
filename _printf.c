@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _pritnf - printf funct
+ * _print - printf funct
  * @format: inputs
  * Return: nbr of characters to dispplay
  */

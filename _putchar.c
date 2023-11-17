@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * putchar - display things
+ * _putchar - display things
  * @c: what is to be displayed
  * Return: some nbr
  */
