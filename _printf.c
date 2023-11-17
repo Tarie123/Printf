@@ -8,7 +8,7 @@ int _printf(const char *format, ...)
 {
 	va_list rags;
 	int counter = 0;
-	
+
 	va_start(rags, format);
 	while (*format != '\0')
 	{
@@ -27,8 +27,8 @@ int _printf(const char *format, ...)
 					counter += _putchar('%');
 					break;
 				default:
-					counter += _putchar('%');
 					counter += _putchar(*format);
+					break;
 			}
 		}
 		else
@@ -38,5 +38,5 @@ int _printf(const char *format, ...)
 		format++;
 	}
 	va_end(rags);
-	return counter;
+	return (counter);
 }
