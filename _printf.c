@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ * _pritnf - printf funct
+ * @format: inputs
+ * Return: nbr of characters to dispplay
  */
 int _printf(const char *format, ...)
 {
@@ -23,16 +24,16 @@ int _printf(const char *format, ...)
 					counter += print_string(va_arg(rags, const char*));
 					break;
 				case '%':
-					counter += _putchar("%");
+					counter += _putchar('%');
 					break;
 				default:
-					counter += _putchar("%");
-					counter += _putchar(format);
+					counter += _putchar('%');
+					counter += _putchar(*format);
 			}
 		}
 		else
 		{
-			count += _putchar(format);
+			counter += _putchar(*format);
 		}
 		format++;
 	}

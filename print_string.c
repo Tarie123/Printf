@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ * print_string - displaying a string
+ * @str: string in actual sense to be used
+ * Return: Nbr of strings
  */
 int print_string(const char *str)
 {
@@ -11,7 +10,7 @@ int print_string(const char *str)
 
 	while(*str != '\0')
 	{
-		counter += _putchar(str);
+		counter += _putchar(*str);
 		str++;
 	}
 	return (counter);
