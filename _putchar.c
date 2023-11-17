@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *
- *
- *
+ * putchar - display things
+ * @c: what is to be displayed
+ * Return: some nbr
  */
 int _putchar(char c)
 {
-	return write(1, &c, 1);
+	return (write(1, &c, 1));
 }
