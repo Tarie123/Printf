@@ -1,1 +1,2 @@
-Readme.md
+THIs is readme for dir of printf
+
