@@ -8,6 +8,8 @@
 int _printf(const char *format, ...);
 int binary(int num);
 int octal(int num);
-int printf_decimal_specifier(va_list argumenst); 
+int printf_decimal_specifier(va_list argumenst);
+void print_int(int nunmber);
+void process_d_i_specitfier(const char* format, va_list arguments);
 
 #endif
