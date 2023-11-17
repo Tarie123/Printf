@@ -47,7 +47,7 @@ int _printf(const char *format, ...)
 		}
 		if (*format == '%' && (*(format + 1) == 'd' || (*format + 1) == 'i'))
 		{
-			printf_d_i_specifier(format,ls_args);
+			process_d_i_specifier(format,ls_args);
 		}
 		format ++;
 	}
