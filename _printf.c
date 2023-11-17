@@ -30,6 +30,18 @@ int _printf(const char *format, ...)
 				case 'i':
 					counter += print_integer(va_arg(rags, int));
 					break;
+				case 'u':
+					counter += print_unsigned(va_arg(rags, unsigned int));
+					break;
+				case 'o':
+					counter += print_octal(va_arg(rags, unsigned int));
+					break;
+				case 'x':
+					counter += print_hex(va_arg(rags, unsigned int), 0);
+					break;
+				case 'X':
+					counter += print_hex(va_arg(rags, unsigned int), 1);
+					break;
 				default:
 					counter += _putchar(*format);
 					break;
