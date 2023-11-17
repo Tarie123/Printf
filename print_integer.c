@@ -14,7 +14,7 @@ int print_integer(int n)
 		n = -n;
 	}
 	temp = n;
-	do{
+	do {
 		temp /= 10;
 		digit_count++;
 	} while (temp != 0);
