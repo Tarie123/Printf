@@ -10,6 +10,6 @@ int _printf(const char *format, ...);
 int binary(int num);
 int octal(int num);
 void print_int(int nunmber);
-void process_d_i_specitfier(const char* format, va_list arguments);
+void process_d_i_specifier(const char* format, va_list arguments);
 
 #endif
