@@ -10,7 +10,7 @@ void process_d_i_specifier(const char *format, va_list arguments)
 	format++;
 	switch (*format)
 	{
-		case 'd' || case 'i':
+		case 'd'|| 'i':
 			print_int(va_arg(arguments, int));
 			break;
 		default:

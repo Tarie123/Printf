@@ -45,7 +45,7 @@ int _printf(const char *format, ...)
 				char_p += str_len;
 			}
 		}
-		if (*format == '%' && (*(format + 1) == 'd' || *(*format + 1) == 'i'))
+		if (*format == '%' && (*(format + 1) == 'd' || (*format + 1) == 'i'))
 		{
 		printf_decimal_specifier(ls_args);
 		}
